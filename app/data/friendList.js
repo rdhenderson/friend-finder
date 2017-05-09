@@ -10,13 +10,13 @@ var friendList = {
   initFriends : function (){
     connection.query("SELECT * FROM friends;", (err, data) => {
       if (err) throw err;
-      if (data[0].answers) {
+      if (data[0].survey) {
         for (var i = 0; i < data.length; i++){
-          var answers = data[i].answers.split('').map(function(x){
+          var survey = data[i].survey.split('').map(function(x){
             return parseInt(x, 10);
           });
-          console.log('survey says', survey);
-          this.friends.push(new Friend(data[i].id, data[i].name, data[i].photo, answers));
+          // console.log('survey says', survey);
+          this.friends.push(new Friend(data[i].id, data[i].name, data[i].photo, survey));
         }
         this.updateBestMatch();
       }
