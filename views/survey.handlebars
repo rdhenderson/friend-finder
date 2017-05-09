@@ -1,0 +1,88 @@
+<h1>Friend Finder - Survey</h1>
+
+
+<div class="container">
+
+  <form name="suvery-form" class="form-horizontal" action="/api/friends" method="POST">
+<fieldset form="survey-form">
+
+<!-- Form Name -->
+<legend>Find A Friend</legend>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name"> Enter your Name </label>
+  <input id='name' name='name' class="form-control" type='text'><input>
+  <label class="col-md-4 control-label" for="select01">Question 1: Turtles are creepy. </label>
+  <div class="col-md-4">
+    <select id="select01" name="question01" class="form-control">
+      <option value="1">1 - Not At All</option>
+      <option value="2">2 - Somewhat</option>
+      <option value="3">3 - Agree </option>
+      <option value="4">4 - Agree Strongly two</option>
+      <option value="5">5 - Bigly! </option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="select02">Question 2: I love unicorns and ponies. </label>
+  <div class="col-md-4">
+    <select id="select02" name="question02" class="form-control">
+      <option value="1">1 - Not At All</option>
+      <option value="2">2 - Somewhat</option>
+      <option value="3">3 - Agree </option>
+      <option value="4">4 - Agree Strongly two</option>
+      <option value="5">5 - Bigly! </option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="select03">Select Basic</label>
+  <div class="col-md-4">
+    <select id="select03" name="question03" class="form-control">
+      <option value="1">1 - Not At All</option>
+      <option value="2">2 - Somewhat</option>
+      <option value="3">3 - Agree </option>
+      <option value="4">4 - Agree Strongly two</option>
+      <option value="5">5 - Bigly! </option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="select04">Select Basic</label>
+  <div class="col-md-4">
+    <select id="select04" name="question04" class="form-control">
+      <option value="1">1 - Not At All</option>
+      <option value="2">2 - Somewhat</option>
+      <option value="3">3 - Agree </option>
+      <option value="4">4 - Agree Strongly two</option>
+      <option value="5">5 - Bigly! </option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="select05">Select Basic</label>
+  <div class="col-md-4">
+    <select id="select05" name="question05" class="selectpicker form-control">
+      <option value="1">1 - Not At All</option>
+      <option value="2">2 - Somewhat</option>
+      <option value="3">3 - Agree </option>
+      <option value="4">4 - Agree Strongly two</option>
+      <option value="5">5 - Bigly! </option>
+    </select>
+  </div>
+</div>
+<button id="submit_survey" class="btn btn-lg btn-primary" type="submit">Submit</button>
+
+</fieldset>
+
+</form>
+</div>

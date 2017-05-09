@@ -1,0 +1,18 @@
+<h1>Friend Finder - Results</h1>
+
+<table>
+  <tr>
+    <td> Name </td>
+    <td> Photo </td>
+    <td> Survey Results </td>
+    <td> Closest Match </td>
+  </tr>
+  {{#each friends}}
+  <tr>
+    <td> {{this.name}} </td>
+    <td> {{this.photo}} </td>
+    <td> {{this.survey}} </td>
+    <td> {{this.testMatch}}</td>
+  </tr>
+  {{/each}}
+</table>
