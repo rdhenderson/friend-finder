@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "best match to survey results ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdhenderson/friend-finder.git"
+  },
+  "keywords": [
+    "bootcamp"
+  ],
+  "author": "reid.henderson@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rdhenderson/friend-finder/issues"
+  },
+  "homepage": "https://github.com/rdhenderson/friend-finder#readme"
+}
