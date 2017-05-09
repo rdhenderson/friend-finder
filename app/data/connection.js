@@ -3,8 +3,10 @@ var mysql = require("mysql");
 var connection;
 
 if (process.env.JAWSDB_URL) {
+    console.log("Loading jaws DB", process.env.JAWSDB_URL);
     connection = mysql.createConnection(process.env.JAWSDB_URL);
   } else {
+    console.log("Did not locate JawsDB");
     connection = mysql.createConnection({
       host: "localhost",
       user: "root",
