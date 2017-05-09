@@ -19,7 +19,7 @@ module.exports = function(app, list) {
     connection.query("INSERT INTO friends (name, photo, survey) VALUES (? ,? ,?)",
                     [req.body.name, '#', answers.join('')], (err, result) => {
       if (err) throw err;
-      res.send("Your match is " + newFriend.match.name '' + ". You have a difference score of: " + newFriend.match.name);
+      res.send("Your match is " + newFriend.match.name + ". You have a difference score of: " + newFriend.match.name);
     });
   });
 };
