@@ -1,5 +1,7 @@
+console.log('Server.js Started.');
 var express = require("express");
 var bodyParser = require("body-parser");
+
 var Friend = require('./app/data/friends.js').Friend;
 
 var port = 3000;
