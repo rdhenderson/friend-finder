@@ -16,6 +16,7 @@ list.initFriends();
 //Initialize express handlebars for rendering
 var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set('port', (process.env.PORT || 3000));
 app.set("view engine", "handlebars");
 
 //Enable body parser and static middleware
@@ -26,4 +27,4 @@ app.use(express.static(__dirname + '/app/public'));
 require('./app/routing/apiRoutes.js')(app, list);
 require('./app/routing/htmlRoutes.js')(app, list);
 
-app.listen(port);
+app.listen(app.get('port'));
