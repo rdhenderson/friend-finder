@@ -17,11 +17,9 @@ module.exports = function(app, list) {
     var newFriend = list.addFriend(name, null, answers);
 
     connection.query("INSERT INTO friends (name, photo, survey) VALUES (? ,? ,?)",
-                    [req.body.name, '#', answers.join('')], function(err, result) {
-      if (err) {
-        throw err;
-      }
-      res.send("Your match is " + '' + ". You have a difference score of: " + '');
+                    [req.body.name, '#', answers.join('')], (err, result) => {
+      if (err) throw err;
+      res.send("Your match is " + newFriend.match.name '' + ". You have a difference score of: " + newFriend.match.name);
     });
   });
 };

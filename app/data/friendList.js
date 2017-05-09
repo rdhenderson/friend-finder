@@ -5,6 +5,7 @@ var friendList = {
   friends : [],
   addFriend : function(name, photo, answers) {
     this.friends.push(new Friend(this.friends.length, name, photo, answers));
+    this.updatebestMatch();
   },
 
   initFriends : function (){
