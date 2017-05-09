@@ -1,6 +1,9 @@
 {
   "name": "friend-finder",
   "version": "1.0.0",
+  "engines": {
+    "node" : "7.7.2"
+  }
   "description": "best match to survey results ",
   "main": "server.js",
   "scripts": {
